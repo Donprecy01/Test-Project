@@ -6,36 +6,43 @@
     <title>Fitness App</title>
     <link rel="stylesheet" href="assignment.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <div class="container">
-        <nav >
-            <!-- logo -->
+
+    <nav class="navbar">
+        
         <div class="nav-container">
+            <!-- logo -->
             <div class="logo">
-            <a href="assignment.html"><img src="asset/logo.png" alt="logo" ></a>
+                <a href="assignment.html"><img src="asset/logo.png" alt="logo" ></a>
             </div>
 
-         <!-- menu toggle button -->
-            <div class="menu-toggle">
-                <i class="fa fa-bars" aria-hidden="true"></i></div>
+                <!-- menu toggle button -->
+                <div class="menu-toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
 
-            <!-- navigation menu -->
-            <div class="nav-links"> 
-                <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
-                <button class="login"> <i class="fas fa-user"></i>   
-                    Log in
-                </button>
+                <!-- navigation menu -->
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <button class="login"> <i class="fas fa-user"></i>   
+                        Log in
+                    </button>
                 </ul>
-            </div> 
-            
-        </div>
+
+                <button class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                
+                
+        </div>     
         
-        </nav> <br> <br>
+    </nav> <br> <br>    
     
         <div>
             <div class="hero">
@@ -49,16 +56,16 @@
 
         <a href="#"><img src="asset/hero-bg.png" alt="Hero Background Image" class="hero-image"></a>
         <a href="#"><img src="asset/hero-bg-mobile.png" alt="Hero Background Image mobile" class="hero-image-desktop"></a>
-    </div>
+    
 
-    <div class="hero-overlay">
+     <div class="hero-overlay">
         <h2>Discover how our app works and get fit in <br> no time</h2>
         <img src="asset/video-preview.png" alt="Video Preview" class="video-preview">
         <div>
             <button class="get-started2">Get Started</button>
         </div>
         
-    </div>
+     </div>
 
     <div class="second-hero">
         <h3>Hear from our satisfied users who <br> transformed their lives.</h3>
@@ -136,28 +143,28 @@
                 <button class="tab">Pricing</button>
             </div>
 
-            <div class="faq-question">
-                <div class="question-text">
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">
                 How can the app help me achieve my fitness goals?
                 <span class="toggle">+</span>
                 </div>
-                <div class="faq-answer">The app provides tailored workout plans, tracks your progress, and offers motivation to keep you on track.</div>
+                <div class="answer">The app provides tailored workout plans, tracks your progress, and offers motivation to keep you on track.</div>
              </div>
 
-            <div class="faq-question">
-                <div class="question-text">
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">
                 Can I customize my workout plans?
                 <span class="toggle">+</span>
                 </div>
-                <div class="faq-answer">Yes, you can create personalized workout plans based on your fitness level and goals.</div>
+                <div class="answer">Yes, you can create personalized workout plans based on your fitness level and goals.</div>
             </div>
 
-            <div class="faq-question">
-                <div class="question-text">
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">
                 Is there a free trial available?
                 <span class="toggle">+</span>
                 </div>
-                <div class="faq-answer">Yes, you can start with our free Basic plan to explore features before upgrading.</div>
+                <div class="answer">Yes, you can start with our free Basic plan to explore features before upgrading.</div>
             </div>
         </div>
     </section>
