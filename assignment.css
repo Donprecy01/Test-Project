@@ -198,8 +198,8 @@ h3 {
     border-radius: 10px;
     margin: 10px;
     padding: 50px 15px 25px 15px;
-    height: 470px;
-    width: 300px;
+    height: 580px;
+    width: 350px;
 }
 
 .second-product {
@@ -208,8 +208,8 @@ h3 {
     border-radius: 10px;
     margin: 10px;
     padding: 50px 15px 25px 15px;
-    height: 470px;
-    width: 300px;
+    height: 580px;
+    width: 350px;
 }
 
 .price {
@@ -234,7 +234,7 @@ h3 {
     width: 100%;
     background-color: rgb(90, 153, 253);
     color: white;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 .get-started4:hover {
@@ -363,7 +363,18 @@ h4 {
     
 } 
 
-@media (max-width: 768px) {
+@media (max-width: 866px) {
+    .product, .second-product {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        padding: 30px 15px;
+    }
+
+
+}
+
+@media (max-width: 678px) {
     .menu-toggle {
         display: block;
         
@@ -384,7 +395,7 @@ h4 {
 .hero-image-desktop {
     display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 678px) {
     .hero-image {
         display: none;
     }
@@ -418,6 +429,14 @@ h4 {
         margin-right: 20px;
         align-content: center;
         
+    }
+
+    .testimonial {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        padding: 20px;
+        font-size: 18px;
     }
 }
 
